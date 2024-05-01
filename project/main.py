@@ -41,4 +41,4 @@ class Main:
 
 
 if __name__ == '__main__':
-    Main("extra_files/to_convert/image.png", 'extra_files\\image.wav', 0.005).main()
+    Main("extra_files/to_convert/test.txt", 'extra_files\\for_andrey.wav', 0.005).main()

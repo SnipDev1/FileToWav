@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f015ffc9-8bbc-43fb-b0dd-d6ac5890afee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/.idea/testProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project/extra_files/to_convert/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/testProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/testProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decoded file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Decoded file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/converter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate_audio.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/read_audio.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/extra_files/reconverted/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/extra_files/reconverted/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/extra_files/to_convert/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/extra_files/to_convert/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
