@@ -16,23 +16,23 @@ class ReadAudio:
         read_frequencies = []
         counter = 0
         percentage = -1
-        i = 0
+        iterator = 0
         start_time = time.time()  # Start timer
         elements_per_second = -1
         elements_per_second_loop = -1
         total_spent_time = 0
-        estimated_time_loop = -1
         last_update_time = start_time
         size_of_file = int(audio_length // self.element_duration)
+        elements_per_second_list = []
         while counter < audio_length:
             start_time_loop = time.time()  # Start timer for this iteration
-            start_time_period = round(0 + i * self.element_duration, 4)  # Start time in seconds
-            end_time_period = round(self.element_duration + i * self.element_duration, 4)  # End time in seconds
+            start_time_period = round(0 + iterator * self.element_duration, 4)  # Start time in seconds
+            end_time_period = round(self.element_duration + iterator * self.element_duration, 4)  # End time in seconds
             dominant_frequency = self.get_dominant_frequency_over_period(self.audio_file, start_time_period,
                                                                          end_time_period)
             read_frequencies.append(self.nearest_value(self.frequency_list, dominant_frequency))
             counter += self.element_duration
-            i += 1
+            iterator += 1
             end_time_loop = time.time()  # End timer for this iteration
             time_diff = end_time_loop - start_time_loop
             if time_diff != 0:
@@ -51,9 +51,11 @@ class ReadAudio:
                 print(
                     f"[{math.floor(percentage // 10) * '|'}{' ' * (10 - math.floor(percentage // 10))}] {math.floor(percentage)}%/100% ({int(counter // self.element_duration)}/{size_of_file} elements); Elements per second: {math.floor(elements_per_second)}; Estimated time: {math.floor(estimated_time) // 60} minutes {math.fabs(math.floor(estimated_time) // 60 * 60 - math.floor(estimated_time))} seconds      ",
                     end="\r")
+                elements_per_second_list.append(elements_per_second)
         end_time = time.time()  # End timer
-        total_elements_per_second = i / (end_time - start_time)  # Calculate total elements per second
+        total_elements_per_second = iterator / (end_time - start_time)  # Calculate total elements per second
         print(f"\nTotal elements per second: {total_elements_per_second:.2f}")
+        print(f"Average elements per second: {sum(elements_per_second_list)//len(elements_per_second_list):.2f}")
         print(f"Total spent time: {total_spent_time // 60} minutes {total_spent_time} seconds")
         return read_frequencies
 
